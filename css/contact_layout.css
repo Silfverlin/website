@@ -1,0 +1,41 @@
+#form {
+    min-width: 500px;
+    width: 500px;
+    margin: auto;
+    border: solid black 2px;
+    height: 400px;
+    display: table; 
+}
+
+#col1 {
+    float: left;
+    margin-left: 20px;
+}
+
+#col2 {
+    float: right;
+}
+
+.input {
+    margin-top: 10px;
+    
+}
+
+#message {
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    display: block;
+}
+
+#message_textarea {
+    width: 420px;
+    height: 200px;
+    resize: none;
+}
+
+#submit_div {
+    display: table-cell; 
+    vertical-align: bottom;
+}
