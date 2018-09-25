@@ -2,6 +2,7 @@
 <html>
     <head>
         <link  rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/contact_layout.css">
     </head>
     <body>
         <header>
@@ -17,26 +18,35 @@
         <div id="instructions">
             <p>Here you can contact us</p>
         </div> 
-
+        
         <form id="form">
-            <div id="first_name">
-                First name:
-                <input type="text" name="input_first_name">
+            <div id="col1">
+                <div id="first_name" class="input">
+                    <div>First name:</div>
+                    <input type="text" name="input_first_name">
+                </div>
+                <div id="phone" class="input">
+                    <div>Phone number:</div>
+                    <input type="text" name="input_phone">
+                </div>
             </div>
-            <div id="last_name">
-                Last name:
-                <input type="text" name="input_last_name">
+            <div id="col2">
+                <div id="last_name" class="input">
+                    <div>Last name:</div>
+                    <input type="text" name="input_last_name">
+                </div>
+                <div id="email" class="input">
+                    <div>E-mail:</div>
+                    <input type="text" name="input_email">
+                </div>
             </div>
-            <div id="phone"></div>
-                Phone number:
-                <input type="text" name="input_phone">
-            <div id="email"></div>
-                E-mail:
-                <input type="text" name="input_email">
-            <div id="message">
-                <textarea name="input_message">Write your message here</textarea>
+            <div id="message" class="input">
+                <textarea id="message_textarea" name="input_message">Write your message here</textarea>
             </div>
-            <input type="submit">
+            <div id="submit_div">
+                <input type="submit" id="submit">
+            </div>
         </form>
+        
     </body>
 </html>
