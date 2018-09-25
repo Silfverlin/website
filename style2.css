@@ -91,7 +91,7 @@ header  nav ul li a{
     line-height: 75px;
 }
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 700px){
     header .header__meny {
 		margin: 31px 0;
         text-align: left;
@@ -112,17 +112,16 @@ header  nav ul li a{
 }
 
 
-/*--------------------------------INDEX----------------------*/
+/*--------------------------------INDEX-------------------------------*/
 
 .index {
     display:inline-block; 
     width:100%;
-    min-height:calc(100vh - 175) ;
-    background-image:url('Bilder/main.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; 
-                   
+    min-height:calc(100vh - 175) ;                  /*background picture is atleast 100vh -175px*/
+    background-image:url('Bilder/main.jpg');        /*background img*/
+    background-repeat: no-repeat;                      
+    background-position: center;                    /*center the image*/
+    background-size: cover;                         /*makes the full img cover the page*/          
 }
 
 
@@ -148,9 +147,7 @@ header  nav ul li a{
     background-image:url('Bilder/main2.jpg');
 }
 
-.wrapper {
-    margin: 0 auto;
-}
+
 
 .indexLinks h3{
     font-size: 28px;
@@ -158,10 +155,9 @@ header  nav ul li a{
     color: #fff;
     text-align:center;
     width: 100%;
-    line-height: 10vh;                     /*Gör att texten blir centrerad vertikalt, för att boxen är totalt 100pixlar*/
+    line-height: 10vh;                                      /*Gör att texten blir centrerad vertikalt, för att boxen är totalt 100pixlar*/
     text-transform: uppercase;
     background-image: linear-gradient(to right, #56ccf2, #2f80ed);
-    
 }
 
 .arrow{
@@ -185,7 +181,7 @@ header  nav ul li a{
         font-size: 24px;
         color: #fff;
         letter-spacing: 5px; 
-        position: absolute;  
+          
         bottom: 10vh;  
         left: calc(50vw - 64px);
         text-align:center;
@@ -196,11 +192,11 @@ header  nav ul li a{
     }
 
     .arrow img {
+        position: relative;
         transform: translate(-50%,0);
         animation: move 2s infinite linear;
         align-content: center;
-        position: absolute;  
-        bottom: 5vh;  
+        
         left: calc(50vw - 16px);
     } 
 
@@ -236,23 +232,21 @@ header  nav ul li a{
     }
     
     .wrapper {
-       
+        margin:0 auto;
+        border: 2px solid white;
         max-width: 25%;
-        
     }
 
     .indexLinks {
-      
         display: inline-block;
-     
     }
 
     .indexLinks h3{
         border: 1px solid white;
-        padding: 20px;
         background-image: linear-gradient(to right, #56ccf2, #2f80ed);
-        margin: 5vh 10px;
-        
+        margin: 5vh 100px 0px 0px;
+        text-shadow: 2px 2px 8px #111;
+       
     }
 }
 
