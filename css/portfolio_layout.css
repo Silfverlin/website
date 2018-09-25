@@ -1,0 +1,14 @@
+
+
+
+@media (min-width: 480px) {
+    #proj1 {
+        float: left;
+        margin-left: 10%;
+    }
+
+    #proj2 {
+        float: right;
+        margin-right: 10%;
+    }   
+}
