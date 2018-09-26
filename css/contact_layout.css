@@ -1,41 +1,45 @@
+
+
+#instructions {
+    float: left;
+    width: 100%;
+
+}
+
 #form {
-    min-width: 500px;
-    width: 500px;
     margin: auto;
     border: solid black 2px;
-    height: 400px;
-    display: table; 
-}
-
-#col1 {
-    float: left;
-    margin-left: 20px;
-}
-
-#col2 {
-    float: right;
-}
-
-.input {
-    margin-top: 10px;
+    margin: 25px;
     
 }
 
+.input {
+    margin-top: 20px;
+    margin-left: 20%;
+    
+}
+
+input {
+    margin-top: 10px;
+    font-size: 1.2em;
+    max-width: 50%;
+    
+}
+
+#instructions {
+    margin-top: 20px;
+}
+
 #message {
-    float: left;
-    position: relative;
-    top: 10px;
-    left: 20px;
-    display: block;
+    margin-left: 10%;
 }
 
-#message_textarea {
-    width: 420px;
-    height: 200px;
-    resize: none;
+#textarea {
+    width: 85%;
+    height: 150px;
+    font-size: 1.2em;
 }
 
-#submit_div {
-    display: table-cell; 
-    vertical-align: bottom;
+.label {
+    font-size: 1.1em;
 }
