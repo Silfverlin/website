@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
     <head>
-        <link  rel="stylesheet" href="css/index_layout.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" href="css/style2.css">
         <link rel="stylesheet" href="css/contact_layout.css">
     </head>
     <body>
@@ -15,35 +16,34 @@
             </nav>
         </header>
         
+        <br><br><br>
+
         <div id="instructions">
             <p>Here you can contact us</p>
+            <p>sdfsdfjnkndkfn</p>
         </div> 
         
         <form id="form">
-            <div id="col1">
-                <div id="first_name" class="input">
-                    <div>First name:</div>
-                    <input type="text" name="input_first_name">
-                </div>
-                <div id="phone" class="input">
-                    <div>Phone number:</div>
-                    <input type="text" name="input_phone">
-                </div>
+            <div id="first_name" class="input">
+                <p class="label">First name:</p>
+                <input type="text" name="input_first_name">
             </div>
-            <div id="col2">
-                <div id="last_name" class="input">
-                    <div>Last name:</div>
-                    <input type="text" name="input_last_name">
-                </div>
-                <div id="email" class="input">
-                    <div>E-mail:</div>
-                    <input type="text" name="input_email">
-                </div>
+            <div id="last_name" class="input">
+                <p class="label">Last name:</p>
+                <input type="text" name="input_last_name">
+            </div>
+            <div id="phone" class="input">
+                <p class="label">Phone number:</p>
+                <input type="text" name="input_phone">
+            </div>
+            <div id="email" class="input">
+                <p class="label">E-mail:</p>
+                <input type="text" name="input_email">
             </div>
             <div id="message" class="input">
-                <textarea id="message_textarea" name="input_message">Write your message here</textarea>
+                <textarea id="textarea"  name="input_message">Write your message here</textarea>
             </div>
-            <div id="submit_div">
+            <div id="submit_div" class="input">
                 <input type="submit" id="submit">
             </div>
         </form>
