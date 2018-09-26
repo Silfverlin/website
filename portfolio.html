@@ -1,47 +1,58 @@
 <!doctype html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Skala för mobil device-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Scaling for mobile device-->
         <link rel="stylesheet" href="css/portfolio_layout.css">
         <link  rel="stylesheet" href="css/index_layout.css">      
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"                           
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> <!--symbols for footer-->
     </head>
 
     <body>
-
     <!------------------------------------------Header--------------------------------------------------------------->
         <header>
             <a  class="header__meny" href="portfolio.html">portfolio</a>
-            <nav>
+            <nav class="header_nav">
                 <ul>
-                    <li> <a href="#">Länk1</a> </li> 
-                    <li> <a href="#">Länk2</a> </li>
+                    <li> <a href="#">Link1</a> </li> 
+                    <li> <a href="#">Link2</a> </li>
                 </ul>
-            </nav>
+            </nav> 
         </header>
 
         <!------------------------------------------Main----------------------------------------------------------------->
         <main>
            <!-- Each project is presented with: 1. Header, 2. Image, 3. Short summary of the project, 4. A full text description ("body")
             The full text can be toggled to show/hide with a clickable element ("read_more") -->
-            
-            <div class="project" id="proj1" style= "background-color: #fff">
-                <h2 id ="title">Project1</h2>
-                <img src="css/Bilder/portfolio.jpg" alt="projectImg1">
-                <p class="summary">Short summary</p>
-                <p class="body">Full text</p>
-                <p class="read_more">Show/hide full text</p>
+           
+           <!------------------------Project 1------------------------------------>
+            <div class="project">
+                <h2>Project1</h2>
+                <img src="css/Bilder/portfolio.jpg" alt="project__Img1">
+                <p class="project__summary">Short summary</p>
+                <p class="project__body">Full text</p>
+                <p class="project__readMore">More about this project - click here</p>
             </div>
-    
-            <div class="project" id="proj2" style= "background-color: #fff">
+            <!------------------------Project 2------------------------------------>
+            <div class="project">
                 <h2>Project2</h2>
-                <img src="css/Bilder/portfolio2.jpg" alt="projectImg2">
-                <div class="summary">Short summary</div>
-                <div class="body">Full text</div>
-                <div class="read_more">More about this project</div>
+                <img src="css/Bilder/portfolio2.jpg" alt="project__Img2">
+                <p class="project__summary">Short summary</p>
+                <p class="project__body">Full text</p>
+                <p class="project__readMore">More about this project - click here</p>
             </div> 
         </main>
-    
+        <!------------------------------------------Footer--------------------------------------------------------------->
+        <footer>
+            <ul class="footerMain">
+                <li> <a href="#"> <i class="fas fa-home"></i> Home</a></li>      
+                <li> <a href="#"> <i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li> <a href="#"> <i class="fas fa-male"></i> About us</a></li>
+                <li> <a href="#"> <i class="far fa-envelope"></i> Contact</a></li>
+            </ul>
+        </footer>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="Javascript/portfolio_script.js"></script>      
+        <script src="Javascript/portfolio_script.js"></script> 
     </body>
 </html>
