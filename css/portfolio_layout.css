@@ -10,54 +10,46 @@ header nav ul li a{
     }
 }
 /*------------------------------Main------------------------------------------*/
-
+main{
+    background-color: yellow;
+}
 
 .project {
-    
+    background: #fff;
+    border: 1px solid #fff;
     width:100%;
-    min-height:calc(100vh - 175);
+     min-height:calc(100vh - 100);
 }
 
 .project h2 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
-    color: #fff;
-    text-shadow: 2px 2px 4px #111;
     text-align:center;
     line-height:36px;
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-div .project__body {
+.project__body {
     display: none;
 }
 
 .project img {
     display:inline-block; 
     width:100%;
-    min-height:calc(100vh - 175);
     background-repeat: no-repeat;                      
     background-position: center;                    /*center the image*/
     background-size: cover; 
 }
 
-
 @media only screen and (min-width: 800px) {
-    #proj1 {
-        float: left;
-       /* margin-left: 10%; */
+    .project{
+        min-height:calc(100vh - 175) ; 
     }
-
-    #proj2 {
-        float: right;
-       /* margin-right: 10%;*/
-    }   
    
     .project img{
-        height: 75vh;
+        height: 78vh;
     }
 
     .project__readMore {
