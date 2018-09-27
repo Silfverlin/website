@@ -26,29 +26,33 @@
         <br><br><br>
 
         <form id="form">
-            <div id="first_name" class="input">
+            <div id="first_name" class="input_div">
                 <p class="label">First name:</p>
-                <input type="text" name="input_first_name">
+                <input type="text" name="input_first_name" id="input_first_name">
+                <p class="alert" id="alert_first_name">a</p>
             </div>
-            <div id="last_name" class="input">
+            <div id="last_name" class="input_div">
                 <p class="label">Last name:</p>
-                <input type="text" name="input_last_name">
+                <input type="text" name="input_last_name" class="input_name">
             </div>
-            <div id="phone" class="input">
+            <div id="phone" class="input_div">
                 <p class="label">Phone number:</p>
-                <input type="text" name="input_phone">
+                <input type="text" name="input_phone" class="input_phone">
             </div>
-            <div id="email" class="input">
+            <div id="email" class="input_div">
                 <p class="label">E-mail:</p>
-                <input type="text" name="input_email">
+                <input type="text" name="input_email" class="input_email">
             </div>
-            <div id="message" class="input">
+            <div id="message" class="input_div">
                 <textarea id="textarea"  name="input_message">Write your message here</textarea>
             </div>
-            <div id="submit_div" class="input">
+            <div id="submit_div" class="input_div">
                 <input type="submit" id="submit">
             </div>
         </form>
         
+        
+        <script src="Jquery/jquery.js"></script>
+        <script src="Javascript/input-validator.js"></script>
     </body>
 </html>
