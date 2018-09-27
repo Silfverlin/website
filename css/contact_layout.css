@@ -1,4 +1,6 @@
-
+p {
+    font-size: 1.1em;
+}
 
 #instructions {
     float: left;
@@ -21,7 +23,7 @@
     
 }
 
-input {
+input, .alert {
     margin-top: 10px;
     font-size: 1.2em;
     max-width: 50%;
@@ -42,10 +44,11 @@ input {
     font-size: 1.2em;
 }
 
-.label {
-    font-size: 1.1em;
-}
-
 #submit_div {
     margin-bottom: 20px;
+}
+
+.alert {
+    font-size: 1em;
+    background-color: rgba(209, 49, 49, 0.548);
 }
