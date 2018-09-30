@@ -26,7 +26,7 @@
     border-bottom: 2px solid black;
     background-color: #353333;
     border-spacing: 0px;
-    
+    min-width: 100%;    
 }
 
 .list__header{
@@ -42,7 +42,6 @@ padding: 10px;
 
 .list__tableContent {
     background-color: #353333;
-    
     color: #fff;                        /*Color white for stars*/
     border-bottom: 1px solid black;
 }

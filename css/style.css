@@ -1,9 +1,13 @@
-html, body, div,
-h1, h2, 
-ul, li,
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+ ul, li,
 form,
 table,  
-footer, header, nav, section, summary,
+footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin:0;
     padding:0;
@@ -16,4 +20,10 @@ time, mark, audio, video {
 
 nav ul {
     list-style:none;
+}
+
+
+* {
+	text-decoration: none;
+	
 }
