@@ -9,31 +9,24 @@
     </head>
 
     <body>
-    <!------------------------------------------Header--------------------------------------------------------------->
+<!-- ====================================Header=============================================================== -->
         <header>
-            <a  class="header__meny" href="portfolio.html">portfolio</a>
-            <nav class="header_nav">
-                <ul>
-                    <li> <a href="#">Link1</a> </li> 
-                    <li> <a href="#">Link2</a> </li>
-                </ul>
-            </nav> 
+            <a  class="header__meny" href="index.html">Klientprogrammering</a>
         </header>
 
-        <!------------------------------------------Main----------------------------------------------------------------->
+<!-- ====================================Main================================================================= -->
         <main>
            <!-- Each project is presented with: 1. Header, 2. Image, 3. Short summary of the project, 4. A full text description ("body")
             The full text can be toggled to show/hide with a clickable element ("read_more") -->
            
-           <!------------------------Project 1------------------------------------>
+<!-- ===================================Project 1============================================================= -->
             <div class="project">
                 <h2>Java system </h2>
                 <img src="css/Bilder/portfolio.jpg" alt="project__Img1">
                 <p class="project__summary">Short summary</p>
                 <p class="project__body">Full text</p>
                 <p class="project__readMore">More about this project - click here</p>
-            </div>
-            <!------------------------Project 2------------------------------------>
+<!-- ==================================Project 2============================================================= -->
             <div class="project">
                 <h2>Project2</h2>
                 <img src="css/Bilder/portfolio2.jpg" alt="project__Img2">
@@ -42,15 +35,17 @@
                 <p class="project__readMore">More about this project - click here</p>
             </div> 
         </main>
-        <!------------------------------------------Footer--------------------------------------------------------------->
-        <footer>
-            <ul class="footerMain">
+<!-- ====================================Footer=============================================================== -->
+    <footer>
+        <div class="footer">
+            <ul class="footer__list">
                 <li> <a href="index.html"> <i class="fas fa-home"></i> Home</a></li>      
-                <li> <a href="#"> <i class="fas fa-briefcase"></i> Portfolio</a></li>
-                <li> <a href="#"> <i class="fas fa-male"></i> About us</a></li>
+                <li> <a href="portfolio.html"> <i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li> <a href="aboutUs.html"> <i class="fas fa-male"></i> About us</a></li>
                 <li> <a href="contact.html"> <i class="far fa-envelope"></i> Contact</a></li>
             </ul>
-        </footer>
+        </div>
+    </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="Javascript/portfolio_script.js"></script> 

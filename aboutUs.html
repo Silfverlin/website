@@ -1,9 +1,8 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 
 <head>
-     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"                           
@@ -14,50 +13,53 @@
 </head>
 
 <body>
-<!------------------------------------------Header--------------------------------------------------------------->
+<!-- ====================================Header=============================================================== -->
     <header>
-        <a  class="header__meny" href="index.html">About us</a>
-        <nav>
-            <ul>
-                <li> <a href="#">Länk1</a> </li> 
-                <li> <a href="#">Länk2</a> </li>
-            </ul>
-        </nav>
-    </header>
-<!------------------------------------------Main----------------------------------------------------------------->
-    <main>
-        <div class="list-container">
-            <table id="listJava-table">
-                    <tr>
-                        <td>Author</td>
-                        <td>name</td>
-                        <td>stars</td>
-                    </tr>
-
-                
-            </table>
+        <a  class="header__meny" href="index.html">Klientprogrammering</a>
+            <nav>
+                <ul>
+                    <li> <a href="profile-anders.html">Anders</a> </li> 
+                    <li> <a href="profile-simon.html">Simon</a> </li>
+                </ul>
+            </nav>
         </div>
-        
-        <div class=list-container>
-            <table id="listCss-table">
+    </header>
+<!-- ====================================Main================================================================= -->
+    <main>
+        <div class="list">
+        <!-- ====================================list of pouplar java libraries from Github================================================================= -->
+            <h2 id="list__h2">These are some popular libraries we are checking out!</h2>
+            <table class="list__table" id="listJava">
+                <h2 class="list__header">Javascript:</h2>
                 <tr>
-                    <td>Author</td>
-                    <td>name</td>
-                    <td>stars</td>
+                    <td class="list__tableHeader">Author</td>
+                    <td class="list__tableHeader">Name</td>
+                    <td class="list__tableHeader">Stars</td>
                 </tr>
             </table>
+         <!-- ====================================list of pouplar css libraries from Github================================================================= -->
+            <table class="list__table" id="listCss">
+                <h2 class="list__header">Css:</h2>
+                <tr>
+                    <td class="list__tableHeader">Author</td>
+                    <td class="list__tableHeader">Name</td>
+                    <td class="list__tableHeader">Stars</td>
+                </tr>
+            </table>
+            <p id="list__p">Tips: Click on the author or name of one of the libraries to open it!</p>
         </div>
     </main>
 
-<!------------------------------------------Footer--------------------------------------------------------------->
+<!-- ====================================Footer=============================================================== -->
     <footer>
-        <ul class="footerMain">
-            <li> <a href="index.html"> <i class="fas fa-home"></i> Home</a></li>      
-            <li> <a href="profile.html"> <i class="fas fa-briefcase"></i> Portfolio</a></li>
-            <li> <a href="aboutUs.html"> <i class="fas fa-male"></i> About us</a></li>
-            <li> <a href="contact.html"> <i class="far fa-envelope"></i> Contact</a></li>
-        </ul>
-       
+        <div class="footer">
+            <ul class="footer__list">
+                <li> <a href="index.html"> <i class="fas fa-home"></i> Home</a></li>      
+                <li> <a href="portfolio.html"> <i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li> <a href="aboutUs.html"> <i class="fas fa-male"></i> About us</a></li>
+                <li> <a href="contact.html"> <i class="far fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
      </footer>
      
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

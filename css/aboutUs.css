@@ -1,24 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,400i,700,700i|Roboto:400,400i,700,700i');
+/* ====================================Header=============================================================== */
 
-div listJava{
+/* ====================================Main================================================================= */
+.list {
+    min-width: 100%;
+    min-height:30vh;
+    text-align: left;
+    background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin: 0 auto;
 }
 
-#listJava-table {
-    border: 2px solid black;
+#list__h2 {
+    padding: 15px;
 }
 
-#listJava  {
-    border: 2px solid black;
+#list__p {
+    padding: 1px;
+    font-size:12px;
 }
 
-table {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+.list__table {
+    border-bottom: 2px solid black;
+    background-color: #353333;
+    border-spacing: 0px;
 }
 
-
-
-
-#listCss-table {
-    border: 2px solid black;
+.list__header{
+text-transform: uppercase;
+padding: 10px;
 }
+
+.list__tableHeader {
+    color:#fff;
+    font-size:24px;
+    border-bottom: 1px solid black;    
+}
+
+.list__tableContent {
+    background-color: #353333;
+    
+    color: #fff;                        /*Color white for stars*/
+    border-bottom: 1px solid black;
+}
+
+.list__tableLink{
+    text-decoration: none;
+    color:#fff;
+}
+
+table tr td {
+    width: calc(100% / 3);
+    table-layout: fixed;
+}
+
