@@ -1,7 +1,8 @@
 //Regular expressions udes for input validation
 var regexpName = new RegExp("^[a-zA-z]+$");
 var regexpPhone = new RegExp("^[0-9]+$");
-var regexpEmail = new RegExp("^\w+\.?\w*@\w+\.\w{2,4}$");
+var regexpEmail = new RegExp("^\\w+\\.?\\w*@\\w+\\.\\w{2,5}$");
+
 
 
 $(".usr_input").keyup(function() {
