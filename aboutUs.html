@@ -2,70 +2,70 @@
 
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"                           
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> <!--symbols for footer-->
-    <link rel="stylesheet" href="css/index_layout.css" />
-    <link rel="stylesheet" href="css/aboutUs.css" />
-    <title> Klientprogrammering </title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"                           
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> <!--symbols for footer-->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/aboutUs.css" />
+        <title> Klientprogrammering </title>
+    </head>
 
-<body>
-<!-- ====================================Header=============================================================== -->
+    <body>
+    <!-- ====================================Header=============================================================== -->
     <header>
-        <a  class="header__meny" href="index.html">Klientprogrammering</a>
+        <div class="meny">
+            <a class="meny__link" href="index.html">Klientprogrammering</a>
             <nav>
-                <ul>
-                    <li> <a href="profile-anders.html">Anders</a> </li> 
-                    <li> <a href="profile-simon.html">Simon</a> </li>
+                <ul class="meny__list">
+                    <li class="meny__listItem"> <a class="meny__listLinks" href="portfolio.html">Portfolio</a> </li> 
+                    <li class="meny__listItem"> <a class="meny__listLinks" href="aboutUs.html">About us</a> </li>
+                    <li class="meny__listItem"> <a class="meny__listLinks" href="contact.html">Contact</a> </li>
                 </ul>
             </nav>
         </div>
     </header>
-<!-- ====================================Main================================================================= -->
+    <!-- ====================================Main================================================================= -->
     <main>
-        <div class="list">
-            <h2 id="list__h2">These are some popular libraries we are checking out!</h2>
-             <!-- ============ list of pouplar java libraries fetched from Github ============== -->
-            <div class="">
-                <table class="list__table" id="listJava">
-                    <h2 class="list__header">Javascript:</h2>
-                    <tr>
-                        <td class="list__tableHeader">Author</td>
-                        <td class="list__tableHeader">Name</td>
-                        <td class="list__tableHeader">Stars</td>
-                    </tr>
-                </table>
-                <!-- ============ list of pouplar css libraries fetched from Github ==============  -->
-                <table class="list__table" id="listCss">
-                    <h2 class="list__header">Css:</h2>
-                    <tr>
-                        <td class="list__tableHeader">Author</td>
-                        <td class="list__tableHeader">Name</td>
-                        <td class="list__tableHeader">Stars</td>
-                    </tr>
-                </table>
+            <div class="wrapper">
+                <h2 id="list__h2">These are some popular libraries from Github that we are checking out!</h2>
+                 <!-- ============ list of pouplar java libraries fetched from Github ============== -->
+                    <table class="list__table" id="listJava">
+                        <h2 class="list__header">Javascript:</h2>
+                        <tr>
+                            <td class="list__tableHeader">Author</td>
+                            <td class="list__tableHeader">Name</td>
+                            <td class="list__tableHeader">Stars</td>
+                        </tr>
+                    </table>
+                    <!-- ============ list of pouplar css libraries fetched from Github ==============  -->
+                    <table class="list__table" id="listCss">
+                        <h2 class="list__header">Css:</h2>
+                        <tr>
+                            <td class="list__tableHeader">Author</td>
+                            <td class="list__tableHeader">Name</td>
+                            <td class="list__tableHeader">Stars</td>
+                        </tr>
+                    </table>
+                <p id="list__p">Tips: Click on the author or name of one of the libraries to open it!</p>
             </div>
-            <p id="list__p">Tips: Click on the author or name of one of the libraries to open it!</p>
-        </div>
-    </main>
+        </main>
 
-<!-- ====================================Footer=============================================================== -->
-    <footer>
-        <div class="footer">
-            <ul class="footer__list">
-                <li> <a href="index.html"> <i class="fas fa-home"></i> Home</a></li>      
-                <li> <a href="portfolio.html"> <i class="fas fa-briefcase"></i> Portfolio</a></li>
-                <li> <a href="aboutUs.html"> <i class="fas fa-male"></i> About us</a></li>
-                <li> <a href="contact.html"> <i class="far fa-envelope"></i> Contact</a></li>
-            </ul>
-        </div>
-     </footer>
-     
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="Javascript/aboutUs.js"></script>
-</body>
+    <!-- ====================================Footer=============================================================== -->
+        <footer>
+            <div class="footer">
+                <ul class="footer__list">
+                    <li class="footer__listItem"> <a class="footer__listLink" href="index.html"> <i class="fas fa-home"></i> Home</a></li>      
+                    <li class="footer__listItem"> <a class="footer__listLink" href="portfolio.html"> <i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li class="footer__listItem"> <a class="footer__listLink" href="aboutUs.html"> <i class="fas fa-male"></i> About us</a></li>
+                    <li class="footer__listItem"> <a class="footer__listLink" href="contact.html"> <i class="far fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="Javascript/aboutUs.js"></script>
+    </body>
 
 </html>
