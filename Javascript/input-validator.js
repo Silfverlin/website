@@ -1,22 +1,29 @@
-//--------RegEx------------
-//Name: /^[a-zA-z]+$/
-//Phone: /^[0-9]+$/
-//E-mail: /^\w+\.?\w*@\w+\.\w{2,4}$/
-
+//Regular expressions udes for input validation
 var regexpName = new RegExp("^[a-zA-z]+$");
 var regexpPhone = new RegExp("^[0-9]+$");
 var regexpEmail = new RegExp("^\w+\.?\w*@\w+\.\w{2,4}$");
 
-$("#alert_first_name").text("yo");
 
 $(".usr_input").keyup(function() {
     var input = this.value;
-    var id = this.id;
+    var elem_id = this.id;
 
-    var regexp = (id) => {
+    var regexp = getRegexp(elem_id); 
+
+    if (regexp.test(input)) {
+        $("#"+elem_id).parent().find(".alert").text("yes");
+    }
+    else {
+        $("#"+elem_id).parent().find(".alert").text("no");
+    }
+})
+
+function getRegexp() {
+    {
         var regexp = new RegExp();
+        var elem_id = arguments[0];
     
-        switch (id) {
+        switch (elem_id) {
             case "input_first_name":
                 //fall-through
             case "input_last_name":
@@ -32,13 +39,4 @@ $(".usr_input").keyup(function() {
         }
         return regexp;
     };
-
-    $("#alert_first_name").text("lo");
-
-    if (regexp.test(input)) {
-        $("#alert_first_name").text("yes");
-    }
-    else {
-        $("#alert_first_name").text("no");
-    }
-})
+}
