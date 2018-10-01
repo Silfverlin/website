@@ -2,10 +2,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/profile-anders_layout.css">
+        <link rel="stylesheet" href="css/profile-simon_layout.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <!-- ====================================Header=============================================================== -->
         <header>
             <div class="meny">
                 <a class="meny__link" href="index.html">Klientprogrammering</a>
@@ -18,57 +19,76 @@
                 </nav>
             </div>
         </header>
-        
-        <div class="wrapper">
-            <h2 id="name">Simon Silfverlin</h2>
-            <img id="portrait" src="css/Bilder/Insidious_Smile.jpg" alt="">
-        </div>
-        <div class="wrapper">
+
+         <!-- ====================================Main================================================================= -->
+        <main>
+            <div class="wrapper">
+                <h2 id="name">Simon Silfverlin</h2>
+                <img id="portrait" src="css/Bilder/simon_profile.jpg" alt="">
+            </div>
             
-            <div id="description">
-               
+            
+            <div class="wrapper">
+                
+                <div class="description">
+                    <p class="description__text">My name is Simon Silfverlin and I am a student at the university of Örebro Sweden.</p>
+                </div>
+            
+                <div class="experience">
+                    <div class="experience__skills">
+                        <h2 class="experience__header">Skills</h2>
+                        <p class="experience__name">Java</p>
+                    </div> <!-- End of div 'experience__skills' -->
+                </div> <!-- End of div 'experience' -->
+                 
+                <div class="fill" id="skill_java">20%</div>
+                
+                        
+                    
+
+                        <p class="skill_name">SQL</p>
+                        <div class="border">
+                            <div class="fill" id="skill_sql">15%</div>
+                        </div>
+
+                        <p class="skill_name">HTML</p>
+                        <div class="border">
+                            <div class="fill" id="skill_html">20%</div>
+                        </div>
+                        
+                    </div> 
+                    <div id="languages">
+                        <h2 class="skills_header">Languages</h2>
+                        <p class="skill_name">Swedish</p>
+                        <div class="border">
+                            <div class="fill" id="skill_swedish">100%</div>
+                        </div>
+
+                        <p class="skill_name">English</p>
+                        <div class="border">
+                            <div class="fill" id="skill_english">95%</div>
+                        </div>
+
+                        <p class="skill_name">German</p>
+                        <div class="border">
+                            <div class="fill" id="skill_german">5%</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </main>
+
+        <!-- ====================================Footer=============================================================== -->
+        <footer>
+            <div class="footer">
+                <ul class="footer__list">
+                    <li class="footer__listItem"> <a class="footer__listLink" href="index.html"> <i class="fas fa-home"></i> Home</a></li>      
+                    <li class="footer__listItem"> <a class="footer__listLink" href="portfolio.html"> <i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li class="footer__listItem"> <a class="footer__listLink" href="aboutUs.html"> <i class="fas fa-male"></i> About us</a></li>
+                    <li class="footer__listItem"> <a class="footer__listLink" href="contact.html"> <i class="far fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </footer>
         
-
-            <div id="skills_container">
-                <div id="skills">   
-                    <h2 class="skills_header">Skills</h2>
-                    <p class="skill_name">Java</p>
-                    <div class="border">
-                        <div class="fill" id="skill_java">80%</div>
-                    </div>
-                    
-                   
-
-                    <p class="skill_name">SQL</p>
-                    <div class="border">
-                        <div class="fill" id="skill_sql">40%</div>
-                    </div>
-
-                    <p class="skill_name">HTML</p>
-                    <div class="border">
-                        <div class="fill" id="skill_html">25%</div>
-                    </div>
-                    
-                </div>
-                <div id="languages">
-                    <h2 class="skills_header">Languages</h2>
-                    <p class="skill_name">Swedish</p>
-                    <div class="border">
-                        <div class="fill" id="skill_swedish">100%</div>
-                    </div>
-
-                    <p class="skill_name">English</p>
-                    <div class="border">
-                        <div class="fill" id="skill_english">95%</div>
-                    </div>
-
-                    <p class="skill_name">German</p>
-                    <div class="border">
-                        <div class="fill" id="skill_german">5%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </body>
 </html>
