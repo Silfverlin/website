@@ -19,44 +19,41 @@
             </div>
         </header>
         
-        <br><br><br>
+        <div class="main_body">
+            <div id="instructions">
+                <h3>Here you can contact us</h3>
+                <h3>We will respond to you as soon as we can</h3>
+            </div> 
 
-        <div id="instructions">
-            <p>Here you can contact us</p>
-            <p>sdfsdfjnkndkfn</p>
-        </div> 
-        
-        <br><br><br>
-
-        <form id="form">
-            <div id="first_name" class="input_div">
-                <p class="label">First name:</p>
-                <input type="text" name="input_first_name" class="usr_input" id="input_first_name">
-                <p class="alert">a</p>
-            </div>
-            <div id="last_name" class="input_div">
-                <p class="label">Last name:</p>
-                <input type="text" name="input_last_name" class="usr_input" id="input_last_name">
-                <p class="alert">a</p>
-            </div>
-            <div id="phone" class="input_div">
-                <p class="label">Phone number:</p>
-                <input type="text" name="input_phone" class="usr_input" id="input_phone">
-                <p class="alert">a</p>
-            </div>
-            <div id="email" class="input_div">
-                <p class="label">E-mail:</p>
-                <input type="text" name="input_email" class="usr_input" id="input_email">
-                <p class="alert">a</p>
-            </div>
-            <div id="message" class="input_div">
-                <textarea id="textarea"  name="input_message">Write your message here</textarea>
-            </div>
-            <div id="submit_div" class="input_div">
-                <input type="submit" id="submit">
-            </div>
-        </form>
-        
+            <form id="form">
+                <div id="first_name" class="input_div">
+                    <p class="label">First name:</p>
+                    <input type="text" name="input_first_name" class="usr_input" id="input_first_name"  data-valid="false">
+                    <p class="alert"></p>
+                </div>
+                <div id="last_name" class="input_div">
+                    <p class="label">Last name:</p>
+                    <input type="text" name="input_last_name" class="usr_input" id="input_last_name"  data-valid="false">
+                    <p class="alert"></p>
+                </div>
+                <div id="phone" class="input_div">
+                    <p class="label">Phone number:</p>
+                    <input type="text" name="input_phone" class="usr_input" id="input_phone"  data-valid="false"> 
+                    <p class="alert"></p>
+                </div>
+                <div id="email" class="input_div">
+                    <p class="label">E-mail:</p>
+                    <input type="text" name="input_email" class="usr_input" id="input_email"  data-valid="false">
+                    <p class="alert"></p>
+                </div>
+                <div id="message" class="input_div">
+                    <textarea id="textarea"  name="input_message">Write your message here</textarea>
+                </div>
+                <div id="submit_div" class="input_div">
+                    <input type="button" class="submit" value="Send">
+                </div>
+            </form>
+        </div>
         
         <script src="Javascript/jquery.js"></script>
         <script src="Javascript/input-validator.js"></script>
