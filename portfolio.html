@@ -3,16 +3,25 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Scaling for mobile device-->
         <link rel="stylesheet" href="css/portfolio_layout.css">
-        <link  rel="stylesheet" href="css/index_layout.css">      
+        <link  rel="stylesheet" href="css/style.css">      
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"                           
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> <!--symbols for footer-->
     </head>
 
     <body>
 <!-- ====================================Header=============================================================== -->
-        <header>
-            <a  class="header__meny" href="index.html">Klientprogrammering</a>
-        </header>
+    <header>
+        <div class="meny">
+            <a class="meny__link" href="index.html">Klientprogrammering</a>
+            <nav>
+                <ul class="meny__list">
+                    <li class="meny__listItem"> <a class="meny__listLinks" href="portfolio.html">Portfolio</a> </li> 
+                    <li class="meny__listItem"> <a class="meny__listLinks" href="aboutUs.html">About us</a> </li>
+                    <li class="meny__listItem"> <a class="meny__listLinks" href="contact.html">Contact</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 <!-- ====================================Main================================================================= -->
         <main>
@@ -39,10 +48,10 @@
     <footer>
         <div class="footer">
             <ul class="footer__list">
-                <li> <a href="index.html"> <i class="fas fa-home"></i> Home</a></li>      
-                <li> <a href="portfolio.html"> <i class="fas fa-briefcase"></i> Portfolio</a></li>
-                <li> <a href="aboutUs.html"> <i class="fas fa-male"></i> About us</a></li>
-                <li> <a href="contact.html"> <i class="far fa-envelope"></i> Contact</a></li>
+                <li class="footer__listItem"> <a class="footer__listLink" href="index.html"> <i class="fas fa-home"></i> Home</a></li>      
+                <li class="footer__listItem"> <a class="footer__listLink" href="portfolio.html"> <i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li class="footer__listItem"> <a class="footer__listLink" href="aboutUs.html"> <i class="fas fa-male"></i> About us</a></li>
+                <li class="footer__listItem"> <a class="footer__listLink" href="contact.html"> <i class="far fa-envelope"></i> Contact</a></li>
             </ul>
         </div>
     </footer>
