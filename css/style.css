@@ -22,8 +22,120 @@ nav ul {
     list-style:none;
 }
 
-
 * {
-	text-decoration: none;
-	
+    text-decoration: none;
+}
+
+/*-----------------HEADER-------------------*/
+.meny {
+	background-color: #fff;	 
+	background-size:100%;
+	min-width:100%;
+	min-height: 100px;								  
+	display: block;
+    color: #111; 
+    border-bottom: 2px solid #111;
+}
+
+.meny__link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:#555555;    							 			
+    font-weight: 900; 							    
+    text-transform: uppercase;				 	    /*converts to uppercase letters*/
+    display: block;
+    margin: 0 auto;                                 /*center*/
+    text-align: center;                             /*Centrer text*/
+    width: fit-content;
+    height:40px;
+    padding: 10px 0;
+}	
+
+.meny__list {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+    
+.meny__listItem { 
+    float:left;
+    padding: 0px 16px;
+    color:#555555;  
+    
+    font-size: 20px;
+}
+
+.meny__listLinks {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: none;    
+    color:#555555; 
+}
+
+.meny__listLinks:hover {
+    color: #111;
+}
+
+@media only screen and (min-width: 700px){
+
+    
+    
+    .meny__link {
+		margin: 31px 0;
+        text-align: left;
+        line-height: 38px; 
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }	
+    
+	.meny__list {
+        margin: 0;
+        float:left;
+    }
+    
+    .meny__listItem {
+        line-height: 100px;
+    }
+
+   
+}
+
+/*-----------------MAIN-------------------*/
+
+
+
+@media only screen and (min-width: 800px){
+
+    .wrapper {
+        margin:0 auto;
+        max-width: 25%;
+    }
+
+}
+/*-----------------FOOTER-------------------*/
+
+footer {
+    margin:0px;
+    width:calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: #111;
+}
+
+.footer__list {
+    width: fit-content;
+    padding-left: 20px;
+}
+
+.footer__listItem {
+    display:block;
+    list-style: none;
+    color: #fff;
+}
+
+.footer__listLink {
+    font-size:14px;
+    color: #fff; 
+    text-transform: uppercase;
+    line-height:30px;   
 }
