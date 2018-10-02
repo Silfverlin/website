@@ -7,10 +7,9 @@ $(document).ready(() => {
 		//looping through index 0-4 of the array
 			var index = 0;
 			while(index < 5) {
-				var authorLink = getAuthorLink(data[index].author);
 				var tableRow = $(		
 					`<tr>
-						<td class="list__tableContent"><a class="list__tableLink" href="${authorLink}">${data[index].author}</a></td>					
+						<td class="list__tableContent"><a class="list__tableLink" href="${data[index].url}">${data[index].author}</a></td>					
 						<td class="list__tableContent"><a class="list__tableLink" href="${data[index].url}">${data[index].name}</a></td>
 						<td class="list__tableContent">${data[index].stars}</td>	
 					</tr>`);
@@ -28,10 +27,9 @@ $(document).ready(() => {
 		//looping through index 0-4 of the array
 				var index = 0;
 			while(index < 5) {
-				var authorLink = getAuthorLink(data[index].author);
-				var tableRow = $(
+				var tableRow = $(		
 					`<tr>
-						<td class="list__tableContent"><a class="list__tableLink" href="${authorLink}">${data[index].author}</td>					
+						<td class="list__tableContent"><a class="list__tableLink" href="${data[index].url}">${data[index].author}</td>					
 						<td class="list__tableContent"><a class="list__tableLink" href="${data[index].url}">${data[index].name}</td>
 						<td class="list__tableContent">${data[index].stars}</td>	
 					</tr>`);
@@ -42,9 +40,4 @@ $(document).ready(() => {
 	}
 	listCss();
 
-	function getAuthorLink() {
-		var author = arguments[0];
-		var authorLink = `http://www.github.com/${author}/`;
-		return authorLink;
-	}
 })

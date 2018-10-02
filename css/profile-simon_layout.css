@@ -8,52 +8,61 @@ body {
     background-size: cover;                         /*makes the full img cover the page*/          
 }
 
-
 .wrapper {
     width: 90%;
     max-width: 90%;
     margin: auto;
+    text-align: center;
 }
 
-p, h2 {
+.description__text, {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
     margin-bottom: 10px;
 }
 
-img {
-    max-width: 50%;
+.portrait {
+    max-width: 100%;
 }
 
-.italic, .note {
-    font-style: italic;
+.experience {
+    border: solid black 2px;
+    background-color: rgb(185, 185, 185);
+    padding: 10px;
+    margin: 20px;
+    border: ridge 4px grey;
+}
+.experience__bar {
+    background-image: linear-gradient(to right, rgb(45, 134, 134), rgb(106, 255, 255));
+    height: 1em;
+    text-align: center;   
 }
 
-.note {
-    font-size: 70%;
-}
 
-#name {
+.experience__header {
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;            
     text-align: center;
     clear: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
 
-#portrait {
-    max-width: 100%;
-    margin-bottom: 40px;
-}
 
-#description {
+
+.description {
     margin-top: 25px;
     text-align: justify;
     padding: 5px;
+    border: ridge 8px rgb(105, 105, 105);
+    background-color: rgba(255, 255, 255, 0.884);
+    
+}
+
+.name {
+    background-color: rgba(255, 255, 255, 0.884);
+    border: ridge 8px rgb(105, 105, 105);
+    margin: 20px;
 }
 
 #skills_container {
@@ -61,11 +70,11 @@ img {
     width: 200px;
 }
 
-#name, #description, #skills_container {
+#skills_container {
     background-color: rgba(255, 255, 255, 0.884);
 }
 
-#name, #description, #skills_container, #portrait {
+ #skills_container, .portrait {
     border: ridge 8px rgb(105, 105, 105);
 }
 
@@ -75,9 +84,7 @@ img {
     margin: 20px;
     border: ridge 4px grey;
 }
-.skills_header {
-    margin-left: 10px;
-}
+
 
 .border {
     border: solid black 2px;
@@ -92,7 +99,7 @@ img {
     text-align: center;
 }
 
-.skill_name {
+.experience__name {
     margin: 10px;
 }
 
@@ -118,19 +125,4 @@ img {
 
 #skill_german {
     width: 20%;
-}
-
-@media (min-width: 480px) {
-    #portrait {
-        float: right;
-        margin-left: 50px;
-    }
-
-    #skills_container {
-        float: left;
-    }
-
-    #description {
-        margin-right: 20px;
-    }
 }
