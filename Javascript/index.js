@@ -1,22 +1,64 @@
+/* =================== ARROW ANIMATION ==================== */
 $(document).ready(function(){
 
     $('.index__arrow').click(function(){
        var heightOfIndex = $('.index').outerHeight() + $('header').outerHeight() + 3;
       $('body,html').animate({scrollTop: heightOfIndex},200);
     });    
-                  
-var myIndex = 0;
-function carousel() {
-    var i;
-    var x = $('.slideshow__img');
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+          
+ 
+ /* =================== SLIDESHOW ==================== */
+
+var slideIndex = 1;
+var t = setInterval(function () {
+  plusDivs(1);
+}, 1000);
+
+showDivs(slideIndex);
+
+function changeState(el) {
+  var text = '';
+  if (!t) {
+    t = setInterval(function () {
+      plusDivs(1);
+    }, 1000);
+    text = 'PAUSE ||';
+  } else {
+    clearInterval(t);
+    t = false;
+    text = 'PLAY';
+  }
+  el.innerText= text;
 }
 
-carousel();
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slideshow__img");
+  //var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = x.length
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+ 
+  x[slideIndex - 1].style.display = "block";
+ 
+}
+
+    $('.slideshow__controller').click(function() {
+        changeState(this);
+    });
+
 });
