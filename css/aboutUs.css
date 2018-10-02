@@ -24,8 +24,14 @@
     background-size: cover;
 }
 
-.profile__link{
+.profile__link {
     color: #fff;
+    font-size: 46px;
+    margin-top: 50px;
+}
+
+.profile__link:hover {
+    color:#353333;
 }
 
 .list {
@@ -38,15 +44,25 @@
     align-items:center;
 }
 
+
+@media only screen and (min-width: 800px){
+    .profile__simon {
+        min-height:calc(100vh - 100px) ;                  /*background picture is atleast 100vh -100px*/
+    }
+    
+    .profile__anders {
+        min-height:100vh;                  /*background picture is atleast 100vh -100px*/
+    }
+
+}
+
 #list__h2 {
     padding: 15px;
-    
 }
 
 #list__p {
     padding: 1px;
     font-size:12px;
-    
 }
 
 .list__table {
