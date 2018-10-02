@@ -19,7 +19,7 @@
 }
 
 .profile__simon {
-    background-image: url("Bilder/Insidious_Smile.jpg");
+    background-image: url("Bilder/simon_profile.jpg");
     min-width:100%;
     min-height:calc(50vh - 54.5px) ;                  /*background picture is atleast 100vh -175px*/
     background-repeat: no-repeat;                      
