@@ -9,10 +9,9 @@
 /*------------------------------Main------------------------------------------*/
 
 .project {
-    background: #fff;
-    border: 1px solid #fff;
-    max-width: 100vw;
-    min-height:calc(100vh - 100);
+    max-width: 100%;
+    min-height:calc(100vh - 100px);
+    text-align: center;
 }
 
 .project h2 {
@@ -27,7 +26,7 @@
 
 .project img {
     display:inline-block; 
-    max-width: 99vw;
+    width:100%;
     min-height:calc(50vh - 54.5px) ;                  /*background picture is atleast 100vh -175px*/
     background-repeat: no-repeat;                      
     background-position: center;                    /*center the image*/
@@ -37,7 +36,7 @@
 
 @media only screen and (min-width: 800px) {
     .project{
-        min-height:calc(100vh - 175) ; 
+        min-height:calc(100vh - 175px) ; 
     }
    
     .project img{

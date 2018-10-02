@@ -4,7 +4,7 @@
 .index {
     display:inline-block; 
     min-width:100%;
-    min-height:calc(100vh - 175) ;                  /*background picture is atleast 100vh -175px*/
+    min-height:calc(100vh - 175px) ;                  /*background picture is atleast 100vh -175px*/
     background-image: url('Bilder/main.jpg');
     background-repeat: no-repeat;                      
     background-position: center;                    /*center the image*/
@@ -76,10 +76,12 @@
     }
 }
 
-
+.slishow {
+    max-width: 100%;
+}
 .slideshow__img{
-    width: 100Vw;
-    height: 45vh;
+    width: 100%;
+    min-height: 100%;
 }
 
 @media only screen and (min-width: 800px){
@@ -111,10 +113,6 @@
         text-shadow: 2px 2px 8px #111;
     }
 
-    .slideshow__img{
-        width: 100Vw;
-        height: 100vh;
-    }
 }
 
 
