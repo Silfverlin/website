@@ -30,6 +30,8 @@ body {
     padding: 10px;
     margin: 20px;
     border: ridge 4px grey;
+    width: 45vw;
+    border: ridge 8px rgb(105, 105, 105);
 }
 .experience__bar {
     background-image: linear-gradient(to right, rgb(45, 134, 134), rgb(106, 255, 255));
@@ -65,25 +67,10 @@ body {
     margin: 20px;
 }
 
-#skills_container {
-    margin-top: 40px;
-    width: 200px;
-}
-
-#skills_container {
-    background-color: rgba(255, 255, 255, 0.884);
-}
-
- #skills_container, .portrait {
+ .portrait {
     border: ridge 8px rgb(105, 105, 105);
 }
 
-#skills, #languages {
-    background-color: rgb(185, 185, 185);
-    padding: 10px;
-    margin: 20px;
-    border: ridge 4px grey;
-}
 
 
 .border {
